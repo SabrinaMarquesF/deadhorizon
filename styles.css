@@ -1,0 +1,638 @@
+:root {
+    --primary: #cc0808; 
+    --secondary: #95989a; 
+    --textcolor: #fff;
+    --text-secondary: #ffffff;
+    --text-tertiary: #5d5d5d;
+}
+
+
+*{
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Form */
+
+#event-description {
+    background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(img/painel\ zombie\ low.jpg);
+    background-position: center top;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    color: var(--textcolor);
+}
+
+h2 {
+    padding-top: 150px;
+    padding-right: 25em;
+}
+
+#disclaimer h2, #disclaimer .event-date {
+    color: #008c9e;
+}
+
+#disclaimer h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+#disclaimer .about-event {
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#icon-links {
+    position: absolute;
+    top: 35px; 
+    right: 50px; 
+}
+
+#icon-links a {
+    margin-left: 25px; 
+    color: #008c9e;
+    font-size: 24px; 
+    text-decoration: none;
+}
+
+#icon-links a i {
+    font-size: 24px;
+    transition: transform 0.3s ease; 
+}
+
+#icon-links a:hover i {
+    transform: scale(1.2); 
+}
+
+
+#disclaimer p {
+    font-size: 1.2em;
+    margin-bottom: .3em;
+}
+
+#disclaimer .event-date {
+    font-weight: bold;
+}
+
+.tournament-date {
+    padding-top: 140px;
+}
+
+.event-date {
+    padding-bottom: 4em;
+}
+
+/* benefícios do evento */
+
+#key-benefits h2 {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.benefits-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.benefits {
+    display: flex;
+    width: 400%; 
+    animation: scroll 45s linear infinite; 
+    padding: 4em;
+}
+
+.benefit {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--text-tertiary);
+}
+
+.benefits .benefit-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+/* Animação de rolagem horizontal */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+#benefit-1 {
+    background-image: url("img/zombie\ tenista_low.jpg")
+}
+
+#benefit-2 {
+    background-image: url("img/zombie\ samurai_low.jpg")
+}
+
+#benefit-3 {
+    background-image: url("img/zombie\ rei_low.jpg")
+}
+
+#benefit-4 {
+    background-image: url("img/zombie\ noiva_low.jpg")
+}
+
+#benefit-5 {
+    background-image: url("img/zombie\ motoqueira_low.jpg")
+}
+
+#benefit-6 {
+    background-image: url("img/zombie\ LGBTQ_low.jpg")
+}
+
+#benefit-7 {
+    background-image: url("img/zombie\ fisioculturista_low.jpg")
+}
+
+#benefit-8 {
+    background-image: url("img/zombie\ fada_low.jpg")
+}
+
+#benefit-9 {
+    background-image: url("img/zombie\ anjo_low.jpg")
+}
+
+#benefit-10 {
+    background-image: url("img/zombie\ anão_low.jpg")
+}
+
+.additional {
+    display: none;
+}
+
+
+/* Evento do local */
+
+#location {
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0.6)), url(img/undead\ blocks\ papel\ de\ paredelow.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--textcolor);
+    margin-bottom: 3em;
+}
+
+#address, #about-location {
+    max-width: 30%;
+}
+
+#address #about-location {
+    max-width: 30%;
+}
+
+#address {
+    display: flex;
+}
+
+#address-details {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#about-location h3 {
+    color: var(--primary);
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+#about-location {
+    line-height: 1.5em;
+}
+
+#about-location a.undeadblocks {
+    color: var(--highlight); 
+    text-decoration: underline; 
+}
+
+#video-container {
+    max-width: 28%;
+}
+
+
+/* Detalhes do evento */
+
+#details {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.detail img {
+    width: 50%;
+}
+
+#detail-1 {
+    background-image: url(img/passo\ a\ passo\ limpo_low.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 800px;
+    padding-bottom: 3em;
+}
+
+#detail-2 {
+    background-image: url(img/torneio\ limpo_low.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 90px;
+    padding-bottom: 3em;
+}
+
+#detail-3 {
+    background-image: url(img/ticket\ limpo_low.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 800px;
+    padding-bottom: 3em;
+}
+
+.detail {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 4em;
+}
+
+.detail h3 {
+    margin-bottom: 2em;
+    font-size: 3em;
+    font-weight: 600;
+    margin-top: 1em;
+}
+
+#detail-1 h3 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.detail-description {
+    width: 100%;
+    padding-left: 8em;
+    color: #f8f8f8;
+}
+
+.detail-description ul {
+    list-style-position: inside;
+}
+
+.detail-description ul li {
+    margin-bottom: 0.9em;
+}
+
+.detail-description ul li:last-child {
+    font-weight: bold;
+}
+
+
+/* CTA */
+
+#cta {
+    height: 300px;
+    background: url(img/painel\ zombie\ low.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--textcolor);
+}
+
+#cta h3 {
+    margin-bottom: 1.2em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.bi.bi-discord {
+    font-size: 70px; 
+    color: #008c9e;
+    margin-right: 0.5em; 
+}
+
+.bi.bi-discord:hover {
+    transform: scale(1.2); 
+    transition: transform 0.2s ease; 
+}
+
+
+/* Footer */ 
+
+#footer {
+    text-align: center;
+    color: var(--secondary);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer h3 {
+    font-size: 1.8em;
+    margin-bottom: .5em;
+}
+
+#footer p:nth-child(2) {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+#footer span {
+    font-weight: bold;
+}
+
+/*Imagens Pulse */
+ 
+    .benefit-img {
+        transition: transform 0.3s ease;
+      }
+      
+    .benefit-img:hover {
+        transform: scale(1.2);
+  }
+
+/* Mobile mode */
+
+@media screen and (max-width: 768px) {
+    
+    #event-description h2 {
+      padding-right: 10px;
+    }
+  
+    #icon-links {
+      top: 10px;
+      right: 10px;
+    }
+  
+    #icon-links a {
+      margin: 10px;
+    }
+  
+    .benefits {
+      width: 100%; 
+      padding: 1em;
+    }
+  
+    .benefit {
+      max-width: 100%; 
+    }
+  
+    .benefit-img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    #location {
+      height: auto;
+      text-align: center;
+      padding: 1em 0;
+    }
+  
+    #about-location h3 {
+      font-size: 1.8em;
+      margin-bottom: 0.5em;
+    }
+
+    #details {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0 20px; }
+    
+    .detail img {
+        width: 100%; 
+        max-width: 100%; 
+    }
+    
+    #detail-1,
+    #detail-2,
+    #detail-3 {
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        padding: 2em 0; 
+    }
+    
+    .detail {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 1em; 
+        margin-bottom: 2em; 
+    }
+    
+    .detail h3 {
+        font-size: 2em; 
+        font-weight: 600;
+        margin: 1em 0; 
+    }
+  
+    .detail {
+      flex-direction: column;
+      margin-bottom: 1em;
+    }
+  
+    .detail img {
+      max-width: 100%;
+    }
+  
+    .detail-description {
+      padding: 1em;
+      align-items: center;
+    }
+  
+    #cta {
+      text-align: center;
+      padding: 2em 0;
+    }
+  
+    #cta .bi-discord {
+      font-size: 50px;
+    }
+  
+    #footer h3 {
+      font-size: 1.5em;
+      margin-bottom: 0.3em;
+    }
+  
+    #footer p:nth-child(2) {
+      font-size: 1em;
+    }
+  }
+  
+  /* Mobile Mode Cell */
+  @media screen and (max-width: 450px) {
+    
+    #event-description {
+      padding: 1em; 
+    }
+  
+    #disclaimer h2 {
+      font-size: 2em;
+    }
+  
+    #disclaimer p {
+      text-align: center;
+      font-size: 1.2em; 
+    }
+  
+    #icon-links {
+      top: 10px;
+      right: 10px;
+      text-align: center;
+    }
+  
+    #icon-links a {
+      margin: 10px;
+    }
+  
+    .benefits {
+      flex-direction: column; 
+      align-items: center; 
+      width: auto;
+      padding: 1em;
+    }
+  
+    .benefit {
+      max-width: 100%;
+      margin-bottom: 1em;
+      text-align: center;
+    }
+  
+    .benefit-img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    #location {
+      height: auto;
+      text-align: center;
+      padding: 1em 0;
+    }
+  
+    #about-location h3 {
+      font-size: 1.8em;
+      margin-bottom: 0.5em;
+    }
+  
+    .detail {
+      flex-direction: column;
+      margin-bottom: 1em;
+    }
+
+    #details {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0 20px; }
+    
+    .detail img {
+        width: 100%; 
+        max-width: 100%; 
+    }
+    
+    #detail-1,
+    #detail-2,
+    #detail-3 {
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        padding: 2em 0; 
+    }
+    
+    .detail {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 1em; 
+        margin-bottom: 2em; 
+    }
+    
+    .detail h3 {
+        font-size: 2em; 
+        font-weight: 600;
+        margin: 1em 0; 
+    }
+  
+    .detail {
+      flex-direction: column;
+      margin-bottom: 1em;
+    }
+  
+    .detail img {
+      max-width: 100%;
+    }
+  
+    .detail-description {
+      padding: 1em;
+      align-items: center;
+    }
+  
+    .detail img {
+      max-width: 100%;
+    }
+  
+    .detail-description {
+      padding: 1em;
+    }
+  
+    .detail-description ul li:last-child {
+      font-weight: normal;
+    }
+  
+    #cta {
+      text-align: center;
+      padding: 2em 0;
+    }
+  
+    #cta .bi-discord {
+      font-size: 50px;
+    }
+  
+    #footer h3 {
+      font-size: 1.5em;
+      margin-bottom: 0.3em;
+    }
+  
+    #footer p:nth-child(2) {
+      font-size: 1em;
+    }
+  }
+  

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@300;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        .detail-description {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .visible {
+            opacity: 1;
+        }
+
+        #music-control {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        #music-icon {
+            font-size: 24px;
+        }
+    </style>
+    <title>Dead Horizon</title>
+</head>
+
+<body>
+    <header id="event-description">
+        <div id="disclaimer">
+            <h2>DEAD HORIZON</h2>
+            <p class="about-event">
+                Comunidade gamer com torneios semanais e premiações em dinheiro (cryptomoedas)
+            </p>
+            <!--<p class="tournament-date">Início do Campeonato:</p>
+            <p class="event-date">Data a ser marcada após a venda das primeiras 50 NFTs da coleção.</p> -->
+        </div>
+        <div id="icon-links">
+            <a href="PDF/Dead Horizon PDF pt-BR.pdf" download><i class="bi bi-journal-bookmark-fill"></i></a>
+            <span>WHITEPAPER PT-BR</span>
+            <a href="PDF/Dead Horizon PDF ENGLISH.pdf" download><i class="bi bi-journal-bookmark-fill"></i></a>
+            <span>WHITEPAPER ENG</span>
+            <a href="https://opensea.io/collection/dead-horizon"><i class="bi bi-shop"></i></a>
+            <span>OpenSea</span>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></i></a>
+            <a href="https://www.twitch.tv/gravatazombie"><i class="bi bi-twitch"></i></a>
+        </div>
+
+        <audio id="background-music" loop>
+            <source src="audio/Dead horizon song.mp3.mp3" type="audio/mpeg">
+        </audio>
+
+        <button id="music-control" onclick="toggleMusic()">
+            <i id="music-icon" class="bi bi-play-fill"></i>
+        </button>
+
+    </header>
+    <section id="key-benefits">
+        <h2>Como participar:</h2>
+        <div class="benefits-container">
+            <div class="benefits">
+                <div class="benefit">
+                    <div id="benefit-1" class="benefit-img"></div>
+
+                </div>
+                <div class="benefit">
+                    <div id="benefit-2" class="benefit-img"></div>
+
+                </div>
+                <div class="benefit">
+                    <div id="benefit-3" class="benefit-img"></div>
+
+                </div>
+                <div class="benefit">
+                    <div id="benefit-4" class="benefit-img"></div>
+
+                </div>
+                <div class="benefit">
+                    <div id="benefit-5" class="benefit-img"></div>
+
+                </div>
+                <div class="benefit">
+                    <div id="benefit-6" class="benefit-img"></div>
+
+                </div>
+                <div class="benefit">
+                    <div id="benefit-7" class="benefit-img"></div>
+
+                </div>
+                <div class="benefit">
+                    <div id="benefit-8" class="benefit-img"></div>
+
+                </div>
+                <div class="benefit">
+                    <div id="benefit-9" class="benefit-img"></div>
+
+                </div>
+                <div class="benefit">
+                    <div id="benefit-10" class="benefit-img"></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="location">
+        <div id="video-container">
+            <video autoplay loop muted style="max-width: 100%; height: auto;">
+                <source src="video/video/video propaganda.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="about-location">
+            <h3>UNDEAD BLOCKS</h3>
+            <p>
+                Undead Blocks é o primeiro jogo de tiro de zombies em primeiro pessoa AAA cripto do mundo. Os jogadores
+                de undead blocks podem ganhar recompensas todos os dias matando zombies, e podem aumentar seus ganhos
+                utilizando NFTs de armas.
+                Link oficial: <a class="undeadblocks" href="https://www.undeadblocks.com"
+                    target="_blank">www.undeadblocks.com</a>
+            </p>
+        </div>
+    </section>
+    </section id="details">
+    <div class="detail" id="detail-1">
+
+        <div class="detail-description">
+            <h3>Passo a Passo:</h3>
+            <ul>
+                <li>1º Adquirir ao menos 1 das 100 NFTs da coleção;</li>
+                <li>2º Entrar em nosso discord e fazer a verificação da NFT em nosso BOT;</li>
+                <li>3º Participar da comunidade para ficar por dentro das regras e datas de cada torneio e evento;</li>
+                <li>4º Jogar o game durante as respectivas datas e cumprir com as regras descritas;</li>
+                <li>5º Aguarde a verificação dos dados para o pagamento das premiações.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="detail" id="detail-2">
+        <div class="detail-description">
+            <h3>Tópicos:</h3>
+            <ul>
+                <li>Premiação de 200$ (dólares) por torneio.</li>
+                <li>4 torneios por mês</li>
+                <li>Premiação até o top 5</li>
+                <li>Sorteio de NFTs do game (undead blocks)</li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="detail" id="detail-3">
+        <div class="detail-description">
+            <h3>Algumas partes do evento</h3>
+            <ul>
+                <li>1. Preço e Quantidade:
+                    Cada NFT será vendida a um valor fixo de 0.1 ETH. Serão apenas 100 NFTs.
+                </li>
+
+                <li>Política de Reembolso:
+                    Entendemos que às vezes as decisões podem mudar. Portanto, oferecemos a opção de reembolso no valor
+                    de 50% do preço de compra da NFT, sujeito a algumas condições.</li>
+                <li>Leia nosso whitepaper para entendê-las </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function checkScroll() {
+            var details = document.querySelectorAll(".detail");
+
+
+            details.forEach(function (detail) {
+                var detailDescription = detail.querySelector(".detail-description");
+
+
+                var detailTop = detail.offsetTop - window.innerHeight * 0.7;
+
+
+                var scrollY = window.scrollY || window.pageYOffset;
+
+
+                if (scrollY > detailTop) {
+                    detailDescription.style.opacity = 1;
+                }
+            });
+        }
+
+        window.addEventListener("scroll", checkScroll);
+
+
+        checkScroll();
+    </script>
+    </section>
+    <section id="cta">
+        <h3>Entre para nossa comunidade:</h3>
+        <a href="https://discord.gg/j8er6AJbBW">
+            <i class="bi bi-discord"></i>
+        </a>
+    </section>
+    <footer id="footer">
+        <h3>DEAD HORIZON</h3>
+        <!--<p>Jogando para vencer</p>-->
+        <p><span>Entre contato: </span>deadhorizoncompany@gmail.com</p>
+        <p><span>Telefone: </span>********</p>
+    </footer>
+
+    <script>
+        var audio = document.getElementById("background-music");
+        var musicControl = document.getElementById("music-control");
+        var musicIcon = document.getElementById("music-icon");
+
+        // Função para pausar ou despausar a música
+        function toggleMusic() {
+            if (audio.paused) {
+                audio.play();
+                musicIcon.className = "bi bi-pause-fill";
+            } else {
+                audio.pause();
+                musicIcon.className = "bi bi-play-fill";
+            }
+        }
+        audio.play();
+        musicIcon.className = "bi bi-pause-fill"; 
+    </script>
+</body>
+
+</html>
